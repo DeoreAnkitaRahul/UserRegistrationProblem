@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationProblem
 {
-   public class FirstName
+    public class FirstName
     {
-        public static string REGEX_FIRSTNAME = "^[A-Z]{1}[A-Za-z]{2,}$";
-        public bool ValidateFirstName(string firstName)
+
+        public static string REGEX_LASTNAME = "^[A-Z]{1}[A-Za-z]{2,}$";
+        public bool ValidateLastName(string LastName)
         {
-            return Regex.IsMatch(firstName, REGEX_FIRSTNAME);
+            return Regex.IsMatch(LastName, REGEX_LASTNAME);
+
         }
     }
 }

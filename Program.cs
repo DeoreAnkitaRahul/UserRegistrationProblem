@@ -5,22 +5,19 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to User Registration Problem");
+            FirstName LastName = new FirstName();
+            Console.WriteLine("Please enter the Last name:");
 
-          FirstName firstname = new FirstName();
-
-            Console.Write("Enter Your First Name : ");
-
-            string FirstName = Console.ReadLine();
-
-            bool val = firstname.ValidateFirstName(FirstName);
+            string lastName = Console.ReadLine();
+            bool val = LastName.ValidateLastName(lastName);
 
             if (val)
             {
-                Console.WriteLine("FirstName is Valid");
+                Console.WriteLine("Last name matched");
             }
             else
             {
-                Console.WriteLine("Invalid FirstName");
+                Console.WriteLine("Last name not matched");
             }
         }
 
